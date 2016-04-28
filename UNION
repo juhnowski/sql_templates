@@ -1,0 +1,17 @@
+SELECT X , Y FROM T1
+UNION
+SELECT X , Y FROM T2
+
+  T1				T2		--->	    T3	
+------			---------			-----------
+X | Y			  X | Y				   X | Y
+0 | 1.0			0.0 | 0				 0.0 | 1.0
+0 | 2.0			0.0 | 1				 0.0 | 2.0
+				1.0 | 2				 0.0 | 0.0
+									 1.0 | 2.0
+
+STRONG RECOMMENDATIONS:
+-----------------------
+SELECT CAST ( X AS NUMERIC(5,1) ) AS X , Y FROM T1
+UNION
+SELECT X , CAST ( Y AS NUMERIC(5,1) ) AS Y FROM T2

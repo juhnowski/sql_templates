@@ -1,0 +1,11 @@
+TYPES
+
+BOOLEAN	 	INTEGER 		CHARACTER(n)
+			SMALLINT 		CHARACTER VARYING(n)
+			BIGINT 			CHARACTER LARGE OBJECT(n)
+			NUMERIC(p,q) 	BINARY(n)
+			DECIMAL(p,q) 	BINARY VARYING(n)
+			FLOAT(p) 		BINARY LARGE OBJECT(n)
+
+
+SET <scalar variable ref> = <scalar exp> ;
