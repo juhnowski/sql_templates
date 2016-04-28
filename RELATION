@@ -1,0 +1,18 @@
+RELATION
+{ TUPLE { SNO 'S1' , SNAME 'Smith' , STATUS 20 , CITY 'London' } ,
+TUPLE { SNO 'S2' , SNAME 'Jones' , STATUS 10 , CITY 'Paris' } ,
+TUPLE { SNO 'S3' , SNAME 'Blake' , STATUS 30 , CITY 'Paris' } ,
+TUPLE { SNO 'S4' , SNAME 'Clark' , STATUS 20 , CITY 'London' } ,
+TUPLE { SNO 'S5' , SNAME 'Adams' , STATUS 30 , CITY 'Athens' } }
+
+
+RELATION { tx1 , tx2 , tx3 }
+
+* Relations never contain duplicate tuples—because the body of a relation is a set (a set of
+tuples) and sets in mathematics don’t contain duplicate elements.
+
+* Relations never contain nulls—because the body of a relation is a set of tuples, and we’ve
+already seen that tuples in turn never contain nulls.
+
+RELATION [ <heading> ] { <tuple exp commalist> }
+

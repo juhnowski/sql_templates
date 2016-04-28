@@ -4,3 +4,5 @@ KEY { SNO } ;
 
 VAR STV /* tuple variable */
 TUPLE { STATUS INTEGER , SNO CHAR , CITY CHAR , SNAME CHAR } ;
+
+STV := TUPLE FROM ( S WHERE SNO = 'S1' ) ;

@@ -1,0 +1,12 @@
+TUPLE { PNO 'P1' , PNAME 'Nut' ,
+COLOR 'Red' , WEIGHT 12.0 , CITY 'London' }
+
+TUPLE { SNO 'S1' , PNO 'P1' , QTY 300 }
+
+TUPLE { NAME 'Superman' ,
+ADDR TUPLE { STREET '1600 Pennsylvania Ave. ' ,
+CITY 'Washington' , STATE 'DC' , ZIP '20500' } }
+
+TUPLE { SNO 'S2' ,
+PNO_REL RELATION { TUPLE { PNO 'P1' } ,
+TUPLE { PNO 'P2' } } }

@@ -1,0 +1,13 @@
+VAR STV TUPLE { STATUS INTEGER , SNO CHAR , CITY CHAR , SNAME CHAR } ;
+
+DECLARE SRV /* SQL row variable */
+ROW ( SNO VARCHAR(5) ,
+SNAME VARCHAR(25) ,
+STATUS INTEGER ,
+CITY VARCHAR(20) ) ;
+
+STV := TUPLE FROM ( S WHERE SNO = 'S1' ) ;
+SET SRV = ( S WHERE SNO = 'S1' ) ;
+
+ROW ( 'P1' , 'Nut' , 'Red' , 12.0 , 'London' )
+ROW ( 'S1' , 'P1' , 300 )

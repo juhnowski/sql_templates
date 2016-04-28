@@ -1,0 +1,7 @@
+UPDATE S
+SET STATUS = 20 , CITY = 'London'
+WHERE CITY = 'Paris' ;
+
+UPDATE S
+SET ( STATUS , CITY ) = ( 20 , 'London' )
+WHERE CITY = 'Paris' ;
